@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		97E281061B24AEA100AC766F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 97E281051B24AEA100AC766F /* main.c */; };
+		97E2810E1B24AFC400AC766F /* nonGenericSearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 97E2810C1B24AFC400AC766F /* nonGenericSearch.c */; };
+		97E281111B24B2A600AC766F /* genericSearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 97E2810F1B24B2A600AC766F /* genericSearch.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		97E281021B24AEA100AC766F /* linearSearch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = linearSearch; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E281051B24AEA100AC766F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		97E2810C1B24AFC400AC766F /* nonGenericSearch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nonGenericSearch.c; sourceTree = "<group>"; };
+		97E2810D1B24AFC400AC766F /* nonGenericSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nonGenericSearch.h; sourceTree = "<group>"; };
+		97E2810F1B24B2A600AC766F /* genericSearch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = genericSearch.c; sourceTree = "<group>"; };
+		97E281101B24B2A600AC766F /* genericSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genericSearch.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				97E281051B24AEA100AC766F /* main.c */,
+				97E2810F1B24B2A600AC766F /* genericSearch.c */,
+				97E281101B24B2A600AC766F /* genericSearch.h */,
+				97E2810C1B24AFC400AC766F /* nonGenericSearch.c */,
+				97E2810D1B24AFC400AC766F /* nonGenericSearch.h */,
 			);
 			path = linearSearch;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				97E281061B24AEA100AC766F /* main.c in Sources */,
+				97E281111B24B2A600AC766F /* genericSearch.c in Sources */,
+				97E2810E1B24AFC400AC766F /* nonGenericSearch.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
