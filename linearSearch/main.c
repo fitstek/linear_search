@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
 //  printf("The index of the searched integer: %i\n",nonGenericLinearSearch(key, myArray, sizeof(myArray)));
   
   // To see the result from the first way of implementing the generic code
-  int *found = genericSearch(&key, &myArray, sizeof(myArray), sizeof(int), intComparison(void*, void*));
+  int *found = genericSearch(&key, &myArray, sizeof(myArray), sizeof(int), **intComparison);
 
   displayFoundElement(found);
 

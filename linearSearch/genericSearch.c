@@ -23,7 +23,7 @@
 
 
 // The following implementation attempts to cover what the previous implementation has left out
-// Inorder to do that we have to replace memcmp with a custom function that we pass in as an argument
+// Inorder to do that we have to replace memcmp with a custom function that the client passes as an argument pass in as an argument
 
 void *genericSearch(void *key, void *base, int numOfElements, int elementSize, int (*intComparison(void *, void *))){
   
