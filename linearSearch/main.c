@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
 //  int intComparisonFunction(key, element);
   
 //  int nonGenericLinearSearch(int key, int array[], int size);
-  void *genericSearch(void *key, void *base, int numOfElements, int elementSize, int (*intComparison(void *, void *)));
+  void *genericSearch(void *key, void *base, int numOfElements, int elementSize, int (intComparison(void *, void *)));
 
   
   int myArray[5] = {1,2,3,4,5};
@@ -24,14 +24,14 @@ int main(int argc, const char * argv[]) {
 //  printf("The index of the searched integer: %i\n",nonGenericLinearSearch(key, myArray, sizeof(myArray)));
   
   // To see the result from the first way of implementing the generic code
-  int *found = genericSearch(&key, &myArray, sizeof(myArray), sizeof(int), **intComparison);
+  int *found = genericSearch(&key, &myArray, sizeof(myArray), sizeof(int), *intComparison);
 
   displayFoundElement(found);
 
 }
 
 void displayFoundElement(void *found){
-  if (found == 0) {
+  if (found != NULL) {
     printf("The character is found at memory location %p", found);
   } else {
     printf("No record found!!");
