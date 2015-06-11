@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Fitsum Teklehaimanot. All rights reserved.
 //
 //
-//#include <stdio.h>
+#include <stdio.h>
+#include <string.h>
 //
 //
 //int main(int argc, const char * argv[]) {
@@ -47,6 +48,7 @@
 
 int main() {
   
+  int StrCmp(void *element1, void *element2);
   void *genericSearch(void *key, void *base, int numOfElements, int elementSize, int (intComparison(void *, void *)));
   
   char *notes[] = {"AB", "F#", "B", "Gb", "D"};
@@ -55,4 +57,11 @@ int main() {
   
   char **found = genericSearch(&favouriteNote, notes, 5, sizeof(char *), StrCmp);
 
+}
+
+int StrCmp (void *element1, void *element2) {
+  char *string1 = *(char **)element1;
+  char *string2 = *(char **)element2;
+  
+  return strcmp(string1, string2);
 }
